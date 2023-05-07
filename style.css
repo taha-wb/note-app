@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+body {
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  background-repeat: no-repeat; 
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  font-family: 'Otomanopee One', sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#banner {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+ 
+}
+
+#notes-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+ 
+}
+
+.note {
+  width: 300px;
+  height: 200px;
+  background-color:rgb(255, 255, 255,.1) ;
+  border: 2px solid #FAACA8;
+  border-radius: 10px;
+  padding-left: 30px;
+  margin-top: 15px;
+  position: relative;
+}
+.note p {
+  padding: 10px;
+}
+.note:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 1.3s;
+}
+.note.active{
+  
+  width: 500px;
+  height: 400px;
+  margin: auto;
+}
+.note.active:hover{
+  transform: none;
+}
+.note .delete-button {
+  /* margin-right: 5px;
+  margin-top: 400px; */
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #f05f58;
+ position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+/* pop up panel styles */
+#window {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 25%;
+  left: 19%;
+  width: 60%;
+  height: 350px;
+  border-radius: 10px;
+  background-image: linear-gradient(19deg, #f07c76 0%, #bbb9c4 100%);
+  border: 2px solid #FAACA8;
+  z-index: 1000000;
+  
+}
+#window p {
+  margin-bottom: auto;
+  padding: 10px;
+}
+#closeIcon {
+  align-self: flex-end;
+}
+#closeIcon img {
+  width: 25px;
+  height: 25px;
+ 
+  cursor: pointer;
+  
+}
+.btn {
+  
+  display: flex;
+  justify-content: flex-end;
+  bottom: 5px;
+  
+}
+.deleteBtn {
+
+}
+
+
+
+#add-icon img {
+  width: 100px;
+  height: 100px;
+ 
+  
+}
+#add-icon {
+  align-self: center;
+  cursor: pointer;
+}
+
+#add-window {
+
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 25%;
+  left: 19%;
+  width: 60%;
+  height: 250px;
+  border-radius: 10px;
+  background-image: linear-gradient(19deg, #f07c76 0%, #bbb9c4 100%);
+  border: 2px solid #FAACA8;
+  transition: 2s;
+  z-index: 10000000;
+}
+
+#add-form label{
+  padding: 25px;
+}
+#add-form {
+ align-self:center ;
+
+}
+#add-closeIcon {
+  align-self: flex-end;
+}
+#add-closeIcon img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+ 
+}
+#submitBtn {
+  cursor: pointer;
+ border-radius: 10px;
+ background-color: #f05f58;
+}
+
+
+
